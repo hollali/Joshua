@@ -16,6 +16,10 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+img {
+    width: 100px;
+}
 .container {
     padding: 10px 10%;
 }
