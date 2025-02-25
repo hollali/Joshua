@@ -99,7 +99,11 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+}
 
+.about-col-2 p {
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .sub-title {
