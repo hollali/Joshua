@@ -223,7 +223,7 @@ nav ul li a:hover::after {
     width: 100%;
     border-radius: 10px;
     display: block;
-    /*object-fit: cover;*/
+    object-fit: cover;
     transition: transform 0.5s;
 }
 
