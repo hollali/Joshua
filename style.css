@@ -278,6 +278,7 @@ nav ul li a:hover::after {
     border-radius: 6px;
     color: #ff004f;
     text-decoration: none;
+    transition:  background 0.5s, color 0.5s;
 }
 
 .btn:hover {
