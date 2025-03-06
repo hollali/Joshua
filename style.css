@@ -363,6 +363,10 @@ form .btn2 {
     margin-top: 20px;
 }
 
+.fa-solid fa-phone {
+    color: #fff;
+    text-decoration: none;
+}
 /*! Responsive  media queries *!*/
 nav .fa-solid {
     display: none;
