@@ -201,6 +201,11 @@ nav ul li a:hover::after {
     margin-top: 20px;
     display: inline-block;
 }
+
+.services-list div a:hover {
+    transition: color 0.5s;
+    color: white;
+}
 .services-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
