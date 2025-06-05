@@ -1,152 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Napkri</title>
-    <link rel="icon" type="image/png" href="./images/nakpri.jpeg">  <!-- For PNG -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">  <!-- For ICO -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    <div id="header">
-        <div id="container">
-            <nav>
-                <img src="images/nakpri-removebg-preview.png" alt="" srcset="">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Nakpri Group Ltd.</p>
-                <h1>Hi I'm <span>Joshua &nbsp;</span>Nakpri</h1>
-            </div>
-        </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/joshua2.jpeg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        I am Joshua Nakpri, a dedicated politician, innovative entrepreneur, and passionate farmer committed to driving positive change in our communities. With a deep-rooted belief in service, I have dedicated my political career to advocating for policies that promote economic growth, agricultural development, and sustainable business practices.  
-                        As a farmer, I understand the challenges faced by hardworking individuals in the agricultural sector. I actively work towards implementing solutions that enhance food security, support rural development, and modernize farming techniques to ensure a prosperous future for the next generation.  
-                        Beyond politics and farming, I am a thriving entrepreneur who believes in the power of business to transform lives. Through my ventures, I have created jobs, empowered young entrepreneurs, and championed innovation to foster economic self-sufficiency.  
-                        My mission is to build a society where businesses flourish, farmers thrive, and governance is transparent and people-centered. With a strong commitment to integrity and progress, I continue to work towards a brighter and more prosperous future for all.
-                    </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Politician</span><br>Public Servant & A man of the people</li>
-                                <li><span>Entrepreneur</span><br>Business man & Philanthropists</li>
-                                <li><span>Farmer</span><br>A Farmer</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Politician</span><br>Former Secretary of international relations</li>
-                                <li><span>Entrepreneur</span><br>Ceo of Nakpri Group Ltd</li>
-                                <li><span>Farmer</span><br>in-depth experience in various forms of farming</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2018-2022</span><br>Bcs in Psychics form Kwame Nkrumah University of Science and Technology</li>
-                                <!--<li><span>202K</span><br></li>-->
-                                <!--<li><span>202k</span><br>MBA in Business Administration</li>-->
-                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Companies / Services</h1>
-            <div class="services-list">
-                <div>
-                    <h2>NAKPRI IT CONSULTANCY</h2>
-                    <p>
-                        Welcome to Nakpri IT consultancy, your one-stop solution for all things IT. We specialize in a comprehensive range of services, including building computer laboratories, providing top-quality computers, and offering expert training to help individuals and businesses harness the power of IT tools effectively.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <h2>NAKPRI FACILITY MANAGEMENT COMPANY LIMITED </h2>
-                    <p>
-                        Nakpri Facility Management Company is committed to creating optimal working and living environments by meticulously assessing the structural integrity and vitality of spaces. Our comprehensive services include evaluating the strength of structures, conducting thorough cleaning, implementing effective fumigation, executing precise painting, artistic decoration, meticulous washing, and providing comprehensive general renovations. Through our dedicated efforts, we aim to ensure that workplaces, encompassing offices, factories, construction sites, and homes, do not only foster productivity but also offer a high standard of living for all occupants. 
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <h2>NAKPRI AGRICULTURE</h2>
-                    <p>
-                        Nakpri group is an agricultural firm that is located at the Oti region formally known as Volta north of Ghana. They are specialized with farm development. Nakpri group is more focused on Zero hunger in Africa. And our way to make sure there is more food in Africa, is set to developing more farmers through skill acquisition and commercial farm management. It more important to build the love for agriculture in young people. Services
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="porfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/shop1.jpeg">
-                    <div class="layer">
-                        <h3>IT CONSULTANT</h3>
-                        <p>we are dedicated to empowering you with the skills and tools necessary to thrive in today's digital world. Whether you need help managing your website, developing applications, or setting up a full-fledged IT infrastructure, we’ve got you covered.</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/Farm.JPG">
-                    <div class="layer">
-                        <h3>AGRICULTURAL CONSULTANT</h3>
-                        <p>Agricultural development in Ghana, focusing on both training farmers and managing commercial farms. Here’s a structured overview based on the information provided</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/nakpri.JPG">
-                    <div class="layer">
-                        <h3>NAKPRI FACILITY MANAGEMENT COMPANY LIMITED</h3>
-                        <p>At Nakpri Facility Management, our mission is to establish a meaningful connection between individuals and their surroundings.</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
-    <div class="carousel-container">
-  <div class="carousel">
-    <img src="./images/joshua0.jpeg" alt="Image 1" class="carousel-img active">
-    <img src="./images/joshua4.jpeg" alt="Image 2" class="carousel-img">
-    <img src="./images/joshua7.jpeg" alt="Image 3" class="carousel-img">
-    <img src="./images/joshua8.jpeg" alt="Image 4" class="carousel-img">
-    <img src="./images/joshua5.jpeg" alt="Image 5" class="carousel-img">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Joshua Napkri</title>
+		<link rel="icon" type="image/png" href="./images/nakpri.jpeg" />
+		<!-- For PNG -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!-- For ICO -->
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+	</head>
+	<body>
+		<div id="header">
+			<div id="container">
+				<nav>
+					<img src="images/nakpri-removebg-preview.png" alt="" srcset="" />
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#service">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<i class="fa-solid fa-x" onclick="closemenu()"></i>
+					</ul>
+					<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<div class="header-text">
+					<p>Nakpri Group Ltd.</p>
+					<h1>Hi I'm <span>Joshua &nbsp;</span>Nakpri</h1>
+				</div>
+			</div>
+		</div>
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="images/joshua2.jpeg" />
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title">About Me</h1>
+						<p>
+							I am Joshua Nakpri, a dedicated politician, innovative
+							entrepreneur, and passionate farmer committed to driving positive
+							change in our communities. With a deep-rooted belief in service, I
+							have dedicated my political career to advocating for policies that
+							promote economic growth, agricultural development, and sustainable
+							business practices. As a farmer, I understand the challenges faced
+							by hardworking individuals in the agricultural sector. I actively
+							work towards implementing solutions that enhance food security,
+							support rural development, and modernize farming techniques to
+							ensure a prosperous future for the next generation. Beyond
+							politics and farming, I am a thriving entrepreneur who believes in
+							the power of business to transform lives. Through my ventures, I
+							have created jobs, empowered young entrepreneurs, and championed
+							innovation to foster economic self-sufficiency. My mission is to
+							build a society where businesses flourish, farmers thrive, and
+							governance is transparent and people-centered. With a strong
+							commitment to integrity and progress, I continue to work towards a
+							brighter and more prosperous future for all.
+						</p>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">
+								Skills
+							</p>
+							<p class="tab-links" onclick="opentab('experience')">
+								Experience
+							</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li>
+									<span>Politician</span><br />Public Servant & A man of the
+									people
+								</li>
+								<li>
+									<span>Entrepreneur</span><br />Business man & Philanthropists
+								</li>
+								<li><span>Farmer</span><br />A Farmer</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li>
+									<span>Politician</span><br />Former Secretary of international
+									relations
+								</li>
+								<li><span>Entrepreneur</span><br />Ceo of Nakpri Group Ltd</li>
+								<li>
+									<span>Farmer</span><br />in-depth experience in various forms
+									of farming
+								</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li>
+									<span>2018-2022</span><br />Bcs in Psychics form Kwame Nkrumah
+									University of Science and Technology
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="services">
+			<div class="container">
+				<h1 class="sub-title">My Companies / Services</h1>
+				<div class="services-list">
+					<div>
+						<h2>NAKPRI IT CONSULTANCY</h2>
+						<p>
+							Welcome to Nakpri IT consultancy, your one-stop solution for all
+							things IT. We specialize in a comprehensive range of services,
+							including building computer laboratories, providing top-quality
+							computers, and offering expert training to help individuals and
+							businesses harness the power of IT tools effectively.
+						</p>
+						<a href="#">Learn More</a>
+					</div>
+					<div>
+						<h2>NAKPRI FACILITY MANAGEMENT COMPANY LIMITED</h2>
+						<p>
+							Nakpri Facility Management Company is committed to creating
+							optimal working and living environments by meticulously assessing
+							the structural integrity and vitality of spaces. Our comprehensive
+							services include evaluating the strength of structures, conducting
+							thorough cleaning, implementing effective fumigation, executing
+							precise painting, artistic decoration, meticulous washing, and
+							providing comprehensive general renovations. Through our dedicated
+							efforts, we aim to ensure that workplaces, encompassing offices,
+							factories, construction sites, and homes, do not only foster
+							productivity but also offer a high standard of living for all
+							occupants.
+						</p>
+						<a href="#">Learn More</a>
+					</div>
+					<div>
+						<h2>NAKPRI AGRICULTURE</h2>
+						<p>
+							Nakpri group is an agricultural firm that is located at the Oti
+							region formally known as Volta north of Ghana. They are
+							specialized with farm development. Nakpri group is more focused on
+							Zero hunger in Africa. And our way to make sure there is more food
+							in Africa, is set to developing more farmers through skill
+							acquisition and commercial farm management. It more important to
+							build the love for agriculture in young people. Services
+						</p>
+						<a href="#">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="porfolio">
+			<div class="container">
+				<h1 class="sub-title">My Work</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="images/shop1.jpeg" />
+						<div class="layer">
+							<h3>IT CONSULTANT</h3>
+							<p>
+								we are dedicated to empowering you with the skills and tools
+								necessary to thrive in today's digital world. Whether you need
+								help managing your website, developing applications, or setting
+								up a full-fledged IT infrastructure, we’ve got you covered.
+							</p>
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/Farm.JPG" />
+						<div class="layer">
+							<h3>AGRICULTURAL CONSULTANT</h3>
+							<p>
+								Agricultural development in Ghana, focusing on both training
+								farmers and managing commercial farms. Here’s a structured
+								overview based on the information provided
+							</p>
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/nakpri.JPG" />
+						<div class="layer">
+							<h3>NAKPRI FACILITY MANAGEMENT COMPANY LIMITED</h3>
+							<p>
+								At Nakpri Facility Management, our mission is to establish a
+								meaningful connection between individuals and their
+								surroundings.
+							</p>
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn">See more</a>
+			</div>
+		</div>
+		<div class="carousel-container">
+			<div class="carousel">
+				<img
+					src="./images/joshua0.jpeg"
+					alt="Image 1"
+					class="carousel-img active" />
+				<img src="./images/joshua4.jpeg" alt="Image 2" class="carousel-img" />
+				<img src="./images/joshua7.jpeg" alt="Image 3" class="carousel-img" />
+				<img src="./images/joshua8.jpeg" alt="Image 4" class="carousel-img" />
+				<img src="./images/joshua5.jpeg" alt="Image 5" class="carousel-img" />
 
-    <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
-    <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
-  </div>
-</div>
+				<button class="carousel-btn prev" onclick="prevSlide()">
+					&#10094;
+				</button>
+				<button class="carousel-btn next" onclick="nextSlide()">
+					&#10095;
+				</button>
+			</div>
+		</div>
 
-    <!--<div class="slider-container">
+		<!--<div class="slider-container">
     <div class="slider">
         <img src="images/joshua2.jpeg" alt="Slider 1">
         <img src="images/joshua3.jpeg" alt="Slider 2">
@@ -158,83 +233,92 @@
     <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
 </div>-->
 
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>joshuanapkri@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>0547319261</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https//wa.me/2330547319261"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://maps.app.goo.gl/aSBgBykNTLTK4Aqu5"><i class="fa-solid fa-location-dot"></i></a>
-                    </div>
-                    <a href="./file/#" download class="btn btn2">Download Profile</a>
-                </div>
-                <div class="contact-right">
-                    <form action="https://formsubmit.co/joshuanapkri@gmail.com" method="post">
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="email" name="email"  placeholder="Email" required>
-                        <textarea name="Message" rows="6" placeholder="Message" required></textarea>
-                        <button type="submit" class="btn btn2">Send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Joshua Nakpri. All rights reserved.</p>
-        </div>
-    </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.target.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-            
-    // Carousel functionality
-     let currentSlide = 0;
-  const slides = document.querySelectorAll('.carousel-img');
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="sub-title">Contact Me</h1>
+						<p><i class="fa-solid fa-paper-plane"></i>joshuanapkri@gmail.com</p>
+						<p><i class="fa-solid fa-phone"></i>0547319261</p>
+						<div class="social-icons">
+							<a href="#"><i class="fa-brands fa-facebook"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+							<a href="https//wa.me/2330547319261"
+								><i class="fa-brands fa-whatsapp"></i
+							></a>
+							<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://maps.app.goo.gl/aSBgBykNTLTK4Aqu5"
+								><i class="fa-solid fa-location-dot"></i
+							></a>
+						</div>
+						<a href="./file/#" download class="btn btn2">Download Profile</a>
+					</div>
+					<div class="contact-right">
+						<form
+							action="https://formsubmit.co/joshuanapkri@gmail.com"
+							method="post">
+							<input type="text" name="Name" placeholder="Name" required />
+							<input type="email" name="email" placeholder="Email" required />
+							<textarea
+								name="Message"
+								rows="6"
+								placeholder="Message"
+								required></textarea>
+							<button type="submit" class="btn btn2">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>&copy; 2025 Joshua Nakpri. All rights reserved.</p>
+			</div>
+		</div>
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+			function opentab(tabname) {
+				for (tablink of tablinks) {
+					tablink.classList.remove("active-link");
+				}
+				for (tabcontent of tabcontents) {
+					tabcontent.classList.remove("active-tab");
+				}
+				event.target.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+			var sidemenu = document.getElementById("sidemenu");
+			function openmenu() {
+				sidemenu.style.right = "0";
+			}
+			function closemenu() {
+				sidemenu.style.right = "-200px";
+			}
 
-  function showSlide(index) {
-    slides.forEach((img, i) => {
-      img.classList.remove('active');
-      if (i === index) img.classList.add('active');
-    });
-  }
+			// Carousel functionality
+			let currentSlide = 0;
+			const slides = document.querySelectorAll(".carousel-img");
 
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
+			function showSlide(index) {
+				slides.forEach((img, i) => {
+					img.classList.remove("active");
+					if (i === index) img.classList.add("active");
+				});
+			}
 
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-  }
+			function nextSlide() {
+				currentSlide = (currentSlide + 1) % slides.length;
+				showSlide(currentSlide);
+			}
 
-  // Auto-init
-  showSlide(currentSlide);
-  setInterval(nextSlide, 4000); // every 4 seconds
+			function prevSlide() {
+				currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+				showSlide(currentSlide);
+			}
 
-    </script>
-</body>
+			// Auto-init
+			showSlide(currentSlide);
+			setInterval(nextSlide, 4000); // every 4 seconds
+		</script>
+	</body>
 </html>
