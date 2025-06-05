@@ -306,9 +306,9 @@ nav ul li a:hover::after {
 
 .carousel {
 	position: relative;
-	width: 60%;
+	width: 70%;
 	height: 100vw;
-	max-height: 500px;
+	max-height: 700px;
 	overflow: hidden;
 	border-radius: 10px;
 	/*background: #000;*/
