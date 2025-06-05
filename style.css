@@ -308,7 +308,7 @@ nav ul li a:hover::after {
 	position: relative;
 	width: 70%;
 	height: 100vw;
-	max-height: 700px;
+	max-height: 650px;
 	overflow: hidden;
 	border-radius: 10px;
 	/*background: #000;*/
