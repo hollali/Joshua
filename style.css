@@ -311,7 +311,7 @@ nav ul li a:hover::after {
 	max-height: 500px;
 	overflow: hidden;
 	border-radius: 10px;
-	background: #000;
+	/*background: #000;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
