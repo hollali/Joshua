@@ -106,7 +106,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/shop1.jpeg">
                     <div class="layer">
                         <h3>IT CONSULTANT</h3>
                         <p>we are dedicated to empowering you with the skills and tools necessary to thrive in today's digital world. Whether you need help managing your website, developing applications, or setting up a full-fledged IT infrastructure, we’ve got you covered.</p>
@@ -133,24 +133,50 @@
             <a href="#" class="btn">See more</a>
         </div>
     </div>
+    <div class="carousel-container">
+  <div class="carousel">
+    <img src="./images/joshua0.jpeg" alt="Image 1" class="carousel-img active">
+    <img src="./images/joshua4.jpeg" alt="Image 2" class="carousel-img">
+    <img src="./images/joshua7.jpeg" alt="Image 3" class="carousel-img">
+    <img src="./images/joshua8.jpeg" alt="Image 4" class="carousel-img">
+    <img src="./images/joshua5.jpeg" alt="Image 5" class="carousel-img">
+
+    <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
+    <!--<div class="slider-container">
+    <div class="slider">
+        <img src="images/joshua2.jpeg" alt="Slider 1">
+        <img src="images/joshua3.jpeg" alt="Slider 2">
+        <img src="images/joshua4.jpeg" alt="Slider 3">
+        <img src="images/joshua5.jpeg" alt="Slider 4">
+        <img src="images/joshua6.jpeg" alt="Slider 5">
+    </div>--
+    <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+</div>-->
+
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contact@emaple.com</p>
-                    <p><i class="fa-solid fa-phone"></i>123-456-7890</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>joshuanapkri@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0547319261</p>
                     <div class="social-icons">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https//wa.me/2330547319261"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://maps.app.goo.gl/aSBgBykNTLTK4Aqu5"><i class="fa-solid fa-location-dot"></i></a>
                     </div>
                     <a href="./file/#" download class="btn btn2">Download Profile</a>
                 </div>
                 <div class="contact-right">
-                    <form action="https://formsubmit.co/dheztinykartel@gmail.com" method="post">
+                    <form action="https://formsubmit.co/joshuanapkri@gmail.com" method="post">
                         <input type="text" name="Name" placeholder="Name" required>
                         <input type="email" name="email"  placeholder="Email" required>
                         <textarea name="Message" rows="6" placeholder="Message" required></textarea>
@@ -184,6 +210,31 @@
             sidemenu.style.right = "-200px";
         }
             
+    // Carousel functionality
+     let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-img');
+
+  function showSlide(index) {
+    slides.forEach((img, i) => {
+      img.classList.remove('active');
+      if (i === index) img.classList.add('active');
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Auto-init
+  showSlide(currentSlide);
+  setInterval(nextSlide, 4000); // every 4 seconds
+
     </script>
 </body>
 </html>
